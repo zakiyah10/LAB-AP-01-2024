@@ -1,7 +1,9 @@
 # menghitung harga tiket masuk ke sebuah wahana bermain
 
 usia = int(input("Masukkan usia: "))
-if usia < 5:
+if usia <= 0:
+    print("Inputan tidak valid")
+elif usia < 5:
     harga = 0
     print(f"Harga tiket: Rp. {int(harga)}")
 else:
